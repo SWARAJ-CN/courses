@@ -57,6 +57,8 @@ import map from './map.webp'
 
 import exp from './handson.webp';
 
+import opps from './404.svg'
+
 export const assets = {
     hero,CPT,CICSA,ADCA,CEH,
     CySA,CHFI,CompTIA,PenTest,JRHACK,
@@ -64,7 +66,7 @@ export const assets = {
     CND,CPENT,CCNA,ISO,ISOTWO,
     CCISO,CISA,OSCP,roatational,
     avatarOne,avatarTwo,avatarThree,
-    map,exp,
+    map,exp,opps
 }
 
 export const Hero = {

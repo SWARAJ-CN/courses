@@ -8,6 +8,7 @@ import Event from './components/Event'
 import Internship from './components/Internship'
 import ContactUs from './pages/ContactUs'
 import ScrollToTop from './components/ScrollToTop'
+import PageNotFound from './components/PageNotFound'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Route path='/events' element={<Event/>}/>
       <Route path='/internships' element={<Internship/>}/>
       <Route path='contact' element={<ContactUs/>}/>
+      <Route path='/*' element={<PageNotFound/>}/>
      </Routes>
      <Footer/>
     </>
