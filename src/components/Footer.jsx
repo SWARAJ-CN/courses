@@ -140,18 +140,19 @@ const Footer = () => {
         </div>
       </footer>
 
-      <div className="w-full mx-auto bg-gray-900 p-8 md:p-8 md:px-80 flex flex-row sm:flex-row items-center justify-between gap-6 shadow-xl shadow-blue-950/20">
-                    <div className="text-center sm:text-left">
-                        <p className=" text-xs text-white tracking-tight">
-                        &copy; {new Date().getFullYear()} NULLBYTE Hackers Academy. All Rights Reserved.
-                        </p>
-                    </div>
+    <div className="w-full bg-gray-900 p-6 md:py-8 md:px-12 lg:px-24 xl:px-32 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl shadow-blue-950/20">
+  
+  <div className="text-center sm:text-left">
+    <p className="text-xs text-white/80 tracking-tight">
+      &copy; {new Date().getFullYear()} NULLBYTE Hackers Academy. All Rights Reserved.
+    </p>
+  </div>
 
-                    <button className="whitespace-nowrap px-8 text-sm border border-white/40 text-white bg-white/5 rounded-xl  active:scale-[0.98] cursor-pointer">
-                       Terms of Service | Privacy Policy
-                    </button>
-
-            </div>
+  
+  <button className="whitespace-nowrap px-6 py-2.5 text-xs font-medium border border-white/20 text-white hover:bg-white/10 hover:border-white/40 rounded-xl active:scale-[0.98] transition-all duration-150 cursor-pointer">
+    Terms of Service | Privacy Policy
+  </button>
+</div>
     </>
   );
 };

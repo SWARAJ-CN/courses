@@ -183,7 +183,7 @@ export const courses = [
     },
     {
         _id:'co11',
-        title:'Certified RedTeam Associate',
+        title:'Certified NULLBYTE Associate',
         duration:'45 Hours | 12 hours/week',
         image:CRTA,
     },

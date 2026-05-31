@@ -66,15 +66,15 @@ const Internship = () => {
                 className="w-full placeholder-slate-400 border p-3.5 bg-slate-800/50 border-slate-700 rounded-xl focus:outline-none focus:border-blue-500 transition-colors"
               />
               {/* roooooboo menu  heheh 🤖 */}
-              <div class="flex items-center justify-between w-full p-4 bg-gray-50 rounded-md border border-gray-200 shadow-sm font-sans select-none">
-                <div class="flex items-center gap-3">
-                  <label class="relative flex items-center justify-center w-6 h-6 cursor-pointer group">
-                    <input type="checkbox" class="peer sr-only" />
+              <div className="flex items-center justify-between w-full p-4 bg-gray-50 rounded-md border border-gray-200 shadow-sm font-sans select-none">
+                <div className="flex items-center gap-3">
+                  <label className="relative flex items-center justify-center w-6 h-6 cursor-pointer group">
+                    <input type="checkbox" className="peer sr-only" />
 
-                    <div class="w-full h-full border-2 border-blue-400 bg-white rounded transition-all duration-200 peer-checked:bg-blue-600 peer-checked:border-blue-600 shadow-inner group-hover:border-blue-500"></div>
+                    <div className="w-full h-full border-2 border-blue-400 bg-white rounded transition-all duration-200 peer-checked:bg-blue-600 peer-checked:border-blue-600 shadow-inner group-hover:border-blue-500"></div>
 
                     <svg
-                      class="absolute w-4 h-4 text-white opacity-0 transition-opacity duration-200 peer-checked:opacity-100 pointer-events-none"
+                      className="absolute w-4 h-4 text-white opacity-0 transition-opacity duration-200 peer-checked:opacity-100 pointer-events-none"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -87,23 +87,23 @@ const Internship = () => {
                       />
                     </svg>
                   </label>
-                  <span class="text-sm font-medium text-gray-700">
+                  <span className="text-sm font-medium text-gray-700">
                     I'm not a robot
                   </span>
                 </div>
 
-                <div class="flex flex-col items-center justify-center scale-90">
-                  <span class="text-[9px] text-gray-400 font-semibold mt-0.5 tracking-wider uppercase">
+                <div className="flex flex-col items-center justify-center scale-90">
+                  <span className="text-[9px] text-gray-400 font-semibold mt-0.5 tracking-wider uppercase">
                     reCAPTCHA
                   </span>
-                  <div class="flex gap-1 text-[8px] text-gray-400 mt-0.5 font-medium">
-                    <a href="#" class="hover:underline">
+                  <div className="flex gap-1 text-[8px] text-gray-400 mt-0.5 font-medium">
+                    <p  className="hover:underline">
                       Privacy
-                    </a>
+                    </p>
                     <span>•</span>
-                    <a href="#" class="hover:underline">
+                    <p  className="hover:underline">
                       Terms
-                    </a>
+                    </p>
                   </div>
                 </div>
               </div>
