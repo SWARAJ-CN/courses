@@ -17,7 +17,7 @@ const HandsOn = () => {
         </div>
 
     
-        <div className="w-full max-w-5xl relative mb-12 rounded-2xl overflow-hidden border border-slate-800/60 shadow-2xl shadow-blue-950/20 select-none filter brightness-[0.85] contrast-[1.05]">
+        <div className="w-full max-w-5xl relative mb-12 rounded-2xl overflow-hidden bordershadow-2xl shadow-blue-950/20 select-none filter brightness-[0.85] contrast-[1.05]">
           <img 
             src={assets.exp} 
             alt="Experience Map" 
