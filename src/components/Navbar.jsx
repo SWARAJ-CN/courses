@@ -67,7 +67,7 @@ const Navbar = () => {
             <NavLink 
               key={link.path} 
               to={link.path} 
-              onClick={toggleMenu}
+              onClick={() => {toggleMenu()}}
               className={({ isActive }) => 
                 `block px-4 py-3 text-base font-semibold rounded-xl transition-all ${
                   isActive 

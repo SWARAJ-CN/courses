@@ -7,11 +7,13 @@ import AllCourses from './pages/AllCourses'
 import Event from './components/Event'
 import Internship from './components/Internship'
 import ContactUs from './pages/ContactUs'
+import ScrollToTop from './components/ScrollToTop'
 
 const App = () => {
   return (
     <>
     <Navbar/>
+    <ScrollToTop/>
      <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/courses' element={<AllCourses/>}/>
