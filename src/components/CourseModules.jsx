@@ -10,6 +10,7 @@ const CourseModules = () => {
     { id: "06", text: "Art of Scanning & Protocol Enumeration" },
     { id: "07", text: "Web Application testing and bug bounty Hunting" }
   ];
+
   const features = [
     "100% Internship Assistance.",
     "Hands-on Experience",
@@ -38,7 +39,6 @@ const CourseModules = () => {
     }
   ];
 
-  
   const [openFaq, setOpenFaq] = useState(null);
 
   const toggleFaq = (index) => {
@@ -46,15 +46,16 @@ const CourseModules = () => {
   };
 
   return (
-    <div className="bg-slate-50 font-sans min-h-screen">
-      
+  
+    <div className="bg-slate-950 font-sans min-h-screen text-slate-100">
+
       <div className="py-16 px-6 md:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
-            <p className="text-blue-600 font-semibold text-sm uppercase tracking-wider mb-2">
+            <p className="text-blue-400 font-semibold text-sm uppercase tracking-wider mb-2">
               Modules In This Course
             </p>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight">
               Explore Our Cyber Security Internships
             </h2>
           </div>
@@ -63,12 +64,12 @@ const CourseModules = () => {
             {modules.map((module) => (
               <div 
                 key={module.id} 
-                className="flex items-center gap-4 bg-white p-6 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-200"
+                className="flex items-center gap-4 bg-slate-900/50 p-6 rounded-xl border border-slate-800/60 shadow-2xl backdrop-blur-md hover:border-blue-500/30 transition-all duration-200"
               >
-                <div className="shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 text-white font-bold text-lg tracking-wide shadow-sm shadow-blue-200">
+                <div className="shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 text-white font-bold text-lg tracking-wide shadow-md shadow-blue-900/50">
                   {module.id}
                 </div>
-                <p className="text-slate-700 font-medium text-sm leading-relaxed">
+                <p className="text-slate-300 font-medium text-sm leading-relaxed">
                   {module.text}
                 </p>
               </div>
@@ -77,13 +78,13 @@ const CourseModules = () => {
         </div>
       </div>
 
-      <div className="py-16 px-6 md:px-12 lg:px-24 border-t border-slate-200/60 bg-white">
+      <div className="py-16 px-6 md:px-12 lg:px-24 border-t border-slate-900 bg-slate-900/20">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
-            <p className="text-blue-600 font-semibold text-sm uppercase tracking-wider mb-2">
+            <p className="text-blue-400 font-semibold text-sm uppercase tracking-wider mb-2">
               Turn Passion into Expertise.
             </p>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight">
               Hack Your Future: NULLBYTE Hacker Academy Internships
             </h2>
           </div>
@@ -92,12 +93,12 @@ const CourseModules = () => {
             {features.map((feature, idx) => (
               <div 
                 key={idx} 
-                className="flex items-center gap-4 bg-slate-50/70 p-5 rounded-xl border border-slate-100"
+                className="flex items-center gap-4 bg-slate-950/60 p-5 rounded-xl border border-slate-800/50 backdrop-blur-sm"
               >
-                <svg className="w-5 h-5 text-blue-600 shrink-0 stroke-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-5 h-5 text-blue-400 shrink-0 stroke-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-slate-800 font-semibold text-sm tracking-wide">
+                <span className="text-slate-200 font-semibold text-sm tracking-wide">
                   {feature}
                 </span>
               </div>
@@ -105,14 +106,13 @@ const CourseModules = () => {
           </div>
         </div>
       </div>
-
-      <div className="py-16 px-6 md:px-12 lg:px-24 border-t border-slate-200/60">
+      <div className="py-16 px-6 md:px-12 lg:px-24 border-t border-slate-900">
         <div className="max-w-5xl mx-auto">
           <div className="mb-12 text-center md:text-left">
-            <p className="text-blue-600 font-semibold text-sm uppercase tracking-wider mb-2">
+            <p className="text-blue-400 font-semibold text-sm uppercase tracking-wider mb-2">
               Ethical Hacking Internships
             </p>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight">
               Frequently Asked Questions
             </h2>
           </div>
@@ -121,25 +121,24 @@ const CourseModules = () => {
             {faqs.map((faq, idx) => (
               <div 
                 key={idx} 
-                className="border-b border-slate-200 pb-4 h-fit transition-all duration-200"
+                className="border-b border-slate-800/80 pb-4 h-fit transition-all duration-200"
               >
                 <button 
                   onClick={() => toggleFaq(idx)}
                   className="w-full flex items-start gap-3 text-left group py-2 focus:outline-none"
                 >
-                  
-                  <span className={`mt-1 shrink-0 text-blue-600 transition-transform duration-200 ${openFaq === idx ? 'rotate-90' : ''}`}>
+                  <span className={`mt-1 shrink-0 text-blue-400 transition-transform duration-200 ${openFaq === idx ? 'rotate-90' : ''}`}>
                     <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                       <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
                     </svg>
                   </span>
-                  <span className="text-slate-800 font-semibold text-sm group-hover:text-blue-600 transition-colors duration-150">
+                  <span className="text-slate-200 font-semibold text-sm group-hover:text-blue-400 transition-colors duration-150">
                     {faq.question}
                   </span>
                 </button>
                 <div className={`grid transition-all duration-300 ease-in-out ${openFaq === idx ? 'grid-rows-[1fr] opacity-100 mt-2' : 'grid-rows-[0fr] opacity-0 pointer-events-none'}`}>
                   <div className="overflow-hidden">
-                    <p className="text-slate-600 text-xs md:text-sm leading-relaxed pl-7 pr-2">
+                    <p className="text-slate-400 text-xs md:text-sm leading-relaxed pl-7 pr-2">
                       {faq.answer}
                     </p>
                   </div>

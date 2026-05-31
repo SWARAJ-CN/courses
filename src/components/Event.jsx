@@ -6,7 +6,7 @@ import GlobalFootprint from './GlobalFootprint';
 const Event = () => {
   return (
     <>
-    <div className="w-full  mx-auto bg-linear-to-r from-blue-700 to-blue-600/50  p-8 md:p-12 items-center justify-between gap-6 shadow-xl shadow-blue-950/20">
+    <div className="w-full  mx-auto bg-linear-to-r from-blue-900 via-slate-950 to-blue-900  p-8 md:p-12 items-center justify-between gap-6 shadow-xl shadow-blue-950/20">
         <h2 className="text-2xl md:text-6xl font-extrabold text-white tracking-tight text-center">
             Our Events
         </h2>

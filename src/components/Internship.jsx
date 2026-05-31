@@ -16,14 +16,14 @@ const Internship = () => {
         <div className="absolute inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center p-6 md:p-12">
           <div className="max-w-7xl w-full flex flex-col lg:flex-row items-center justify-between gap-12 z-10">
             
-            {/* Left Header Section */}
+          
             <div className="flex flex-col gap-4 text-center lg:text-left max-w-2xl items-center lg:items-start">
               <span className="text-white text-xs md:text-sm font-medium border border-blue-500 bg-blue-500/30 px-4 py-1.5 rounded-full w-fit">
                 Get Hands-on Experience
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl text-slate-100 font-extrabold tracking-tight leading-tight text-center lg:text-left">
                 Cyber Security <br />
-                <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
                   Internships for Tech
                 </span>{" "}
                 <br />
@@ -43,7 +43,6 @@ const Internship = () => {
               </button>
             </div>
 
-            {/* Right Callback Form */}
             <div className="w-full max-w-md flex flex-col gap-4 items-center text-slate-200 p-6 md:p-8 bg-slate-900/80 border border-slate-700/50 backdrop-blur-md rounded-2xl shadow-2xl">
               <h3 className="text-xl font-semibold text-blue-400 self-start mb-2">
                 Request a Call Back
@@ -69,7 +68,6 @@ const Internship = () => {
                 className="w-full placeholder-slate-400 border p-3.5 bg-slate-800/50 border-slate-700 rounded-xl focus:outline-none focus:border-blue-500 transition-colors"
               />
               
-              {/* Refined Captcha Box matching the Dark/Blue Form theme */}
               <div className="flex items-center justify-between w-full p-4 bg-slate-800/40 rounded-xl border border-slate-700/60 shadow-sm font-sans select-none">
                 <div className="flex items-center gap-3">
                   <label className="relative flex items-center justify-center w-6 h-6 cursor-pointer group">
