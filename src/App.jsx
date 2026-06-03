@@ -9,11 +9,20 @@ import Internship from './components/Internship'
 import ContactUs from './pages/ContactUs'
 import ScrollToTop from './components/ScrollToTop'
 import PageNotFound from './components/PageNotFound'
+import { Toaster } from 'react-hot-toast'
+import Whatsapp from './components/Whatsapp'
+import ChatBox from './components/ChatBox'
 
 const App = () => {
   return (
     <>
+      <Toaster
+           position="top-right"
+           containerClassName='mt-15'
+           />
     <Navbar/>
+    <Whatsapp/>
+    <ChatBox/>
     <ScrollToTop/>
      <Routes>
       <Route path='/' element={<Home/>}/>
@@ -22,6 +31,9 @@ const App = () => {
       <Route path='/internships' element={<Internship/>}/>
       <Route path='contact' element={<ContactUs/>}/>
       <Route path='/*' element={<PageNotFound/>}/>
+
+      {/* <Route path='/abcd' element={<ChatBox/>}/> */}
+
      </Routes>
      <Footer/>
     </>

@@ -3,7 +3,7 @@ import { Award, BookOpen, Briefcase, Check, GraduationCap, Laptop, ShieldCheck, 
 
 const Why = () => {
   return (
-    <div className='w-full min-h-screen bg-[#0f1115] text-white py-16 px-6 md:px-16 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center font-sans'>
+    <div id='more' className='w-full min-h-screen bg-[#0f1115] text-white py-16 px-6 md:px-16 lg:px-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center font-sans'>
         
         <div className='grid grid-cols-2 gap-4 md:gap-6 order-2 md:order-1'>
             {/* Card 1 */}
