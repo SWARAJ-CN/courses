@@ -2,8 +2,12 @@ import React from "react";
 import Testimonials from "./Testimonials";
 import HandsOn from "./HandsOn";
 import CourseModules from "./CourseModules";
+import toast from "react-hot-toast";
 
 const Internship = () => {
+  const handleClick =  () => {
+    toast.success('Call back requested successfully')
+  }
   return (
     <>
       <div className="relative w-full min-h-screen lg:h-175 bg-slate-900 overflow-hidden flex items-center justify-center">
@@ -38,9 +42,7 @@ const Internship = () => {
                 ethical hacking course and our exciting opportunities and take
                 the first step towards an in-demand career – apply today!
               </p>
-              <button className="w-fit text-slate-200 px-6 py-2.5 border border-blue-400 rounded-full cursor-pointer hover:bg-blue-500 hover:border-blue-500 transition-all duration-300 font-medium mt-2">
-                Get Started
-              </button>
+             
             </div>
 
             <div className="w-full max-w-md flex flex-col gap-4 items-center text-slate-200 p-6 md:p-8 bg-slate-900/80 border border-slate-700/50 backdrop-blur-md rounded-2xl shadow-2xl">
@@ -107,6 +109,7 @@ const Internship = () => {
               </div>
 
               <button
+              onClick={handleClick}
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl cursor-pointer transition-all duration-300 shadow-lg shadow-blue-600/30 mt-2 active:scale-[0.98]"
               >
                 SUBMIT

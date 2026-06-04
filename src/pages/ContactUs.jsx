@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
+import toast from 'react-hot-toast';
 
 const ContactUs = () => {
+  const handleClick =  () => {
+    toast.success('send Message  successfully')
+  }
   return (
 
     <div className="bg-linear-to-b from-slate-950 via-slate-900 to-slate-950 font-sans min-h-screen text-slate-100">
@@ -128,7 +132,8 @@ const ContactUs = () => {
               ></textarea>
             </div>
 
-            <button 
+            <button
+            onClick={handleClick} 
               type="submit"
               className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm py-4 rounded-xl shadow-lg shadow-blue-900/40 transition-all duration-200 active:scale-[0.99] focus:outline-none"
             >

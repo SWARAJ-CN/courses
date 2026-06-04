@@ -1,8 +1,34 @@
 import React from 'react'
 import { courses } from '../assets/assets';
 import { ArrowDownToLine, ArrowUpRight } from 'lucide-react';
+import toast from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 
 const AllCourses = () => {
+
+  const navigate = useNavigate()
+
+  const handleClick =  () => {
+    toast.success('Call back requested successfully')
+  }
+
+  const handleDownload = () => {
+    const downloadPromise = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        const isSuccess = true;
+        if (isSuccess) {
+          resolve("Downloaded");
+        } else {
+          reject(new Error("Network failed"));
+        }
+      }, 2000);
+    });
+    toast.promise(downloadPromise, {
+      loading: "Downloading file...",
+      success: <b>Download complete!</b>,
+      error: <b>Could not download.</b>,
+    });
+  }
     
   return (
     <>
@@ -45,14 +71,14 @@ const AllCourses = () => {
                   </p>
                 </div>
                 <div className="flex flex-col gap-3 pt-2">
-                  <button className="cursor-pointer flex items-center gap-2 text-xs font-semibold text-blue-400 hover:text-blue-300 transition-colors w-fit group/btn">
+                  <button onClick={handleDownload} className="cursor-pointer flex items-center gap-2 text-xs font-semibold text-blue-400 hover:text-blue-300 transition-colors w-fit group/btn">
                     <div className="p-1.5 bg-blue-500/10 rounded-md group-hover/btn:bg-blue-500/20 transition-colors">
                       <ArrowDownToLine className="w-4 h-4 text-blue-500" />
                     </div>
                     Download Syllabus
                   </button>
 
-                  <button className="cursor-pointer w-full text-center py-2.5 mt-1 border border-slate-700 hover:border-blue-500 text-sm font-semibold text-slate-200 hover:text-white rounded-lg bg-transparent hover:bg-blue-600/10 transition-all duration-200 flex items-center justify-center gap-1.5">
+                  <button onClick={()=>navigate(`/courseDetails/${course._id}`)}  className="cursor-pointer w-full text-center py-2.5 mt-1 border border-slate-700 hover:border-blue-500 text-sm font-semibold text-slate-200 hover:text-white rounded-lg bg-transparent hover:bg-blue-600/10 transition-all duration-200 flex items-center justify-center gap-1.5">
                     Explore more
                     <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 transition-opacity" />
                   </button>

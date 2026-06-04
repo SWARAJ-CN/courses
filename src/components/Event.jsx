@@ -24,10 +24,7 @@ const Event = () => {
           </h2>
         </div>
 
-        <button onClick={()=>navigate('/courses')} className="cursor-pointer w-fit border border-slate-700 hover:border-blue-500 text-sm font-semibold text-slate-200 hover:text-white px-6 py-2.5 rounded-lg bg-transparent hover:bg-blue-600/10 transition-all duration-200 shrink-0 flex items-center gap-1.5 group">
-          View All Courses
-          <ArrowUpRight className="w-4 h-4 text-slate-400 group-hover:text-blue-400 transition-colors" />
-        </button>
+      
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center sm:justify-items-start">

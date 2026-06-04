@@ -3,8 +3,31 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { assets, courses } from "../assets/assets";
 import { Award, BookOpen, Check, GraduationCap, Laptop, ShieldCheck, Users } from "lucide-react";
+import toast from "react-hot-toast";
 
 const CourseDetails = () => {
+
+    const handilClick = () =>{
+        toast.success('Call Back Request Submitted')
+    }
+
+     const handleDownload = () => {
+    const downloadPromise = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        const isSuccess = true;
+        if (isSuccess) {
+          resolve("Downloaded");
+        } else {
+          reject(new Error("Network failed"));
+        }
+      }, 2000);
+    });
+    toast.promise(downloadPromise, {
+      loading: "Downloading file...",
+      success: <b>Download complete!</b>,
+      error: <b>Could not download.</b>,
+    });
+  }
 
     const {id} = useParams();
 
@@ -35,7 +58,7 @@ const CourseDetails = () => {
                   <p className="text-sm md:text-base text-slate-300 leading-relaxed max-w-3xl">
                    {course.subtitle}
                   </p>
-                  <button className="w-fit text-slate-200 px-6 py-2.5 border border-blue-400 rounded-full cursor-pointer hover:bg-blue-500 hover:border-blue-500 transition-all duration-300 font-medium mt-2">
+                  <button onClick={handleDownload} className="w-fit text-slate-200 px-6 py-2.5 border border-blue-400 rounded-full cursor-pointer hover:bg-blue-500 hover:border-blue-500 transition-all duration-300 font-medium mt-2">
                     Download Syllubus
                   </button>
                 </div>
@@ -103,7 +126,7 @@ const CourseDetails = () => {
                 </div>
               </div>
 
-              <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl cursor-pointer transition-all duration-300 shadow-lg shadow-blue-600/30 mt-2 active:scale-[0.98]">
+              <button onClick={handilClick} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl cursor-pointer transition-all duration-300 shadow-lg shadow-blue-600/30 mt-2 active:scale-[0.98]">
                 SUBMIT
               </button>
             </div>
