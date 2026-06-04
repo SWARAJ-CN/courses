@@ -99,7 +99,7 @@ const AllCourses = () => {
                         </h2>
                     </div>
 
-                    <button className="whitespace-nowrap px-8 py-3.5 border border-white/40 hover:border-white text-sm font-semibold text-white bg-white/5 hover:bg-white/15 rounded-xl transition-all duration-200 shadow-sm active:scale-[0.98] cursor-pointer">
+                    <button onClick={()=>navigate(`/contact`)}  className="whitespace-nowrap px-8 py-3.5 border border-white/40 hover:border-white text-sm font-semibold text-white bg-white/5 hover:bg-white/15 rounded-xl transition-all duration-200 shadow-sm active:scale-[0.98] cursor-pointer">
                         Join Us Today
                     </button>
 

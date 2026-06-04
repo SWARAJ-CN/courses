@@ -3,6 +3,7 @@ import { Star, Quote, Play, Volume2, Maximize2 } from 'lucide-react'
 import { assets } from '../assets/assets'
 
 const Testimonials = () => {
+  
   return (
     <div className='w-full min-h-screen bg-[#0f1115] text-white py-16 px-6 md:px-16 lg:px-24 font-sans flex flex-col items-center'>
       

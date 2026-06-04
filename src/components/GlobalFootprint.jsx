@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { ChevronRight, Globe, HelpCircle } from 'lucide-react';
 import { assets } from '../assets/assets';
+import { useNavigate } from 'react-router-dom';
 
 
 const GlobalFootprint = () => {
+
+  const navigate = useNavigate()
  
   const mapPins = [
     { id: 1, top: '25%', left: '15%', label: 'North America' },
@@ -151,7 +154,7 @@ const GlobalFootprint = () => {
                         </h2>
                     </div>
 
-                    <button className="whitespace-nowrap px-8 py-3.5 border border-white/40 hover:border-white text-sm font-semibold text-white bg-white/5 hover:bg-white/15 rounded-xl transition-all duration-200 shadow-sm active:scale-[0.98] cursor-pointer">
+                    <button onClick={()=>navigate(`/contact`)}  className="whitespace-nowrap px-8 py-3.5 border border-white/40 hover:border-white text-sm font-semibold text-white bg-white/5 hover:bg-white/15 rounded-xl transition-all duration-200 shadow-sm active:scale-[0.98] cursor-pointer">
                         Join Us Today
                     </button>
 

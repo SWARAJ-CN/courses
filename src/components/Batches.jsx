@@ -1,9 +1,11 @@
 import React from 'react';
 import { Calendar, Clock, ArrowUpRight } from 'lucide-react';
 import { batchData } from '../assets/assets';
+import { useNavigate } from 'react-router-dom';
 
 const Batches = () => {
   
+  const navigate = useNavigate()
   
 
 
@@ -60,7 +62,7 @@ const Batches = () => {
                       {batch.mode}
                     </span>
                   </div>
-                  <button className="whitespace-nowrap border border-slate-700 hover:border-blue-500 text-xs md:text-sm font-semibold text-slate-200 hover:text-white px-4 py-2 rounded-lg bg-transparent hover:bg-blue-600/10 transition-all duration-200 shrink-0 active:scale-95">
+                  <button onClick={()=>navigate(`/contact`)}  className="whitespace-nowrap border border-slate-700 hover:border-blue-500 text-xs md:text-sm font-semibold text-slate-200 hover:text-white px-4 py-2 rounded-lg bg-transparent hover:bg-blue-600/10 transition-all duration-200 shrink-0 active:scale-95">
                     Book now
                   </button>
                 </div>
@@ -80,7 +82,7 @@ const Batches = () => {
                     </div>
 
                     
-                    <button className="whitespace-nowrap px-8 py-3.5 border border-white/40 hover:border-white text-sm font-semibold text-white bg-white/5 hover:bg-white/15 rounded-xl transition-all duration-200 shadow-sm active:scale-[0.98] cursor-pointer">
+                    <button onClick={()=>navigate(`/contact`)}  className="whitespace-nowrap px-8 py-3.5 border border-white/40 hover:border-white text-sm font-semibold text-white bg-white/5 hover:bg-white/15 rounded-xl transition-all duration-200 shadow-sm active:scale-[0.98] cursor-pointer">
                         Join Us Today
                     </button>
 

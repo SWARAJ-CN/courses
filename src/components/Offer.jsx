@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Offer = () => {
+
+  const navigate = useNavigate()
 
   return (
 
@@ -23,7 +26,7 @@ const Offer = () => {
               RTHA’s ethical hacking course equips both professionals and
               newcomers with the advanced practical skills.
             </p>
-            <button className="cursor-pointer border border-blue-500 text-white text-sm font-semibold px-6 py-2.5 rounded-lg hover:bg-blue-600 transition duration-200">
+            <button onClick={()=>navigate(`/contact`)} className="cursor-pointer border border-blue-500 text-white text-sm font-semibold px-6 py-2.5 rounded-lg hover:bg-blue-600 transition duration-200">
               Get Started
             </button>
           </div>
@@ -42,7 +45,7 @@ const Offer = () => {
               Students enrolled in the cyber security course have access to a
               secured penetration test platform.
             </p>
-            <button className="cursor-pointer border border-blue-500 text-white text-sm font-semibold px-6 py-2.5 rounded-lg hover:bg-blue-600 transition duration-200">
+            <button onClick={()=>navigate(`/contact`)}  className="cursor-pointer border border-blue-500 text-white text-sm font-semibold px-6 py-2.5 rounded-lg hover:bg-blue-600 transition duration-200">
               Get Started
             </button>
           </div>
@@ -55,7 +58,7 @@ const Offer = () => {
               NULLBYTE 360 provides a virtual and classroom learning environment
               for ethical hacking.
             </p>
-            <button className="cursor-pointer border border-blue-500 text-white text-sm font-semibold px-6 py-2.5 rounded-lg hover:bg-blue-600 transition duration-200">
+            <button onClick={()=>navigate(`/contact`)}  className="cursor-pointer border border-blue-500 text-white text-sm font-semibold px-6 py-2.5 rounded-lg hover:bg-blue-600 transition duration-200">
               Get Started
             </button>
           </div>
@@ -74,7 +77,7 @@ const Offer = () => {
               Interactive learning platform with personalized ethical hacking
               experience.
             </p>
-            <button className="cursor-pointer border border-blue-500 text-white text-sm font-semibold px-6 py-2.5 rounded-lg hover:bg-blue-600 transition duration-200">
+            <button onClick={()=>navigate(`/contact`)}  className="cursor-pointer border border-blue-500 text-white text-sm font-semibold px-6 py-2.5 rounded-lg hover:bg-blue-600 transition duration-200">
               Get Started
             </button>
           </div>

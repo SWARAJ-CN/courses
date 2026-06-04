@@ -1,7 +1,9 @@
 import React from "react";
 import { assets } from "../assets/assets";
+import { useNavigate } from "react-router-dom";
 
 const Talents = () => {
+  const navigate = useNavigate()
   return (
    <>
         <div className="w-full bg-white py-16 px-6 md:px-16 lg:px-24 flex items-center justify-center overflow-hidden font-sans">
@@ -49,7 +51,7 @@ const Talents = () => {
                     </div>
 
                     
-                    <button className="whitespace-nowrap px-8 py-3.5 border border-white/40 hover:border-white text-sm font-semibold text-white bg-white/5 hover:bg-white/15 rounded-xl transition-all duration-200 shadow-sm active:scale-[0.98] cursor-pointer">
+                    <button onClick={()=>navigate(`/contact`)}  className="whitespace-nowrap px-8 py-3.5 border border-white/40 hover:border-white text-sm font-semibold text-white bg-white/5 hover:bg-white/15 rounded-xl transition-all duration-200 shadow-sm active:scale-[0.98] cursor-pointer">
                         Book Now
                     </button>
 
