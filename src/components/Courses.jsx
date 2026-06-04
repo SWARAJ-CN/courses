@@ -58,6 +58,7 @@ const Courses = () => {
         {courses.slice(0, 8).map((course, index) => {
           return (
             <div
+              // onClick={()=>navigate(`/courseDetails/${course._id}`)}
               key={index}
               className="w-full max-w-[320px] bg-[#161920] border border-slate-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-blue-500/40 hover:shadow-[0_10px_30px_rgba(37,99,235,0.1)] flex flex-col group"
             >
@@ -89,7 +90,7 @@ const Courses = () => {
                     Download Syllabus
                   </button>
 
-                  <button className="cursor-pointer w-full text-center py-2.5 mt-1 border border-slate-700 hover:border-blue-500 text-sm font-semibold text-slate-200 hover:text-white rounded-lg bg-transparent hover:bg-blue-600/10 transition-all duration-200 flex items-center justify-center gap-1.5">
+                  <button onClick={()=>navigate(`/courseDetails/${course._id}`)} className="cursor-pointer w-full text-center py-2.5 mt-1 border border-slate-700 hover:border-blue-500 text-sm font-semibold text-slate-200 hover:text-white rounded-lg bg-transparent hover:bg-blue-600/10 transition-all duration-200 flex items-center justify-center gap-1.5">
                     Explore more
                     <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 transition-opacity" />
                   </button>

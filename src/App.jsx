@@ -12,6 +12,7 @@ import PageNotFound from './components/PageNotFound'
 import { Toaster } from 'react-hot-toast'
 import Whatsapp from './components/Whatsapp'
 import ChatBox from './components/ChatBox'
+import CourseDetails from './components/CourseDetails'
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
       <Route path='/internships' element={<Internship/>}/>
       <Route path='contact' element={<ContactUs/>}/>
       <Route path='/*' element={<PageNotFound/>}/>
+      <Route path='/courseDetails/:id' element={<CourseDetails/>}/>
 
       {/* <Route path='/abcd' element={<ChatBox/>}/> */}
 

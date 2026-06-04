@@ -25,9 +25,9 @@ const ChatBox = () => {
 
       { open ?  
 
-      <div className="z-50 text-white absolute fixed bottom-15 md:right-15 w-fit h-fit p-4 rounded-full">
+      <div className="z-50 text-white absolute fixed bottom-15 right-1 md:right-15 w-fit h-fit p-4 rounded-full">
       
-        <div className="w-95 h-150 bg-zinc-900 border border-zinc-800 rounded-2xl shadow-2xl flex flex-col overflow-hidden font-sans text-sm">
+        <div className="w-80 md:w-95 h-150 bg-zinc-900 border border-zinc-800 rounded-2xl shadow-2xl flex flex-col overflow-hidden font-sans text-sm">
           
           <div className="bg-blue-600 p-4 flex items-center gap-3 border-b border-blue-500/20 shadow-md">
             <button onClick={handilOpen} className="hover:bg-blue-700 p-1 rounded transition-colors text-white">
@@ -50,7 +50,7 @@ const ChatBox = () => {
           </div>
 
          
-          <div className="flex-1 bg-zinc-950 p-4 overflow-y-auto flex flex-col gap-4">
+          <div className="[&::-webkit-scrollbar]:hidden flex-1 bg-zinc-950 p-4 overflow-y-auto flex flex-col gap-4">
             <span className="text-xs text-zinc-500 font-medium self-center my-1">
               NULLBYTE Academy
             </span>
